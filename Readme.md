@@ -46,7 +46,7 @@ A config file is generated at `BepInEx/config/com.figrindan.radioplus.cfg` after
 | Setting | Default | Description |
 | --- | --- | --- |
 | `Shuffle` | `true` | Shuffle the custom radio playlist. Set to `false` for the original alphabetical order. |
-| `UnlockCustomStation` | `false` | Give FM 88.1 full signal from the start, without activating the radio tower. |
+| `UnlockCustomStation` | `true` | Give FM 88.1 full signal from the start, without activating the radio tower. |
 
 ### Notes
 
