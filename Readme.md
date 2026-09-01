@@ -6,6 +6,7 @@ Easy Delivery Co. already lets you play your own music by dropping files into
 `EasyDeliveryCo_Data/StreamingAssets/CustomRadio`. This mod makes that feature more robust: it
 stops a single stray file from breaking the station, shuffles your playlist, and loads large
 music libraries without the long startup wait.
+This mod unlocks FM 88.1 from the start by default; set UnlockCustomStation = false to preserve the vanilla progression.
 
 I love the game and wanted to be able to listen to custom music during a full playthrough, so I made this mod. 
 
