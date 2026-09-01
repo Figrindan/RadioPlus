@@ -15,7 +15,7 @@ namespace RadioPlus
         {
             Log = Logger;
             Shuffle = Config.Bind("Radio", "Shuffle", true, "Shuffle the custom radio playlist.");
-            UnlockCustom = Config.Bind("Radio", "UnlockCustomStation", false,
+            UnlockCustom = Config.Bind("Radio", "UnlockCustomStation", true,
                 "Give the custom radio station (88.1) full signal from the start, without activating the radio tower. Note, driving next to towers that haven't yet been activated will interrupt your listening :)");
             new Harmony("com.figrindan.radioplus").PatchAll();
             Logger.LogInfo("Radio Plus loaded");

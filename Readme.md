@@ -7,8 +7,7 @@ Easy Delivery Co. already lets you play your own music by dropping files into
 stops a single stray file from breaking the station, shuffles your playlist, and loads large
 music libraries without the long startup wait.
 
-Easy Delivery Co. is a lovely game and the custom radio is a great touch — this mod just files
-down a few rough edges.
+I love the game and wanted to be able to listen to custom music during a full playthrough, so I made this mod. 
 
 ## Features
 
@@ -16,14 +15,14 @@ down a few rough edges.
   stray file in the CustomRadio folder would stop the entire station from working. Unsupported
   files are now skipped, with a note in the log saying which and why.
 - **Shuffle.** Your playlist is shuffled instead of always playing in alphabetical order.
-  Toggleable.
+  Toggleable. This is a truly random shuffle, results may vary.
 - **Faster loading, larger libraries.** Tracks now stream instead of being fully decoded into
   memory at startup. This substantially reduces both load time and memory use, making large
   music folders practical.
 - **Performance fix.** The game recalculated the total length of your entire playlist every
   frame. This is now cached.
-- **Optional early unlock.** Gives FM 88.1 full signal without needing to activate the radio
-  tower first. Off by default.
+- **Early unlock.** Gives FM 88.1 full signal without needing to activate the radio
+  tower first. On by default, because I assume this is why most people will install the mod.
 - **Wider format support.** In addition to MP3, WAV, OGG, and FLAC, the mod will attempt to load
   other audio formats rather than assuming they will fail.
 
@@ -52,7 +51,7 @@ A config file is generated at `BepInEx/config/com.figrindan.radioplus.cfg` after
 
 - Shuffling happens once when the game loads, so the order stays fixed for a session. Restart the
   game for a new order.
-- `UnlockCustomStation` skips a piece of the game's intended progression. It is off by default for
+- `UnlockCustomStation` skips a piece of the game's intended progression. It is on by default, but toggleable for
   that reason.
 
 ## Compatibility
