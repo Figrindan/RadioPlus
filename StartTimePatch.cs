@@ -9,6 +9,7 @@ namespace RadioPlus
     {
         static readonly ConditionalWeakTable<AudioClip[], object> lengthCache =
             new ConditionalWeakTable<AudioClip[], object>();
+        
 
         static bool Prefix(RadioChannel channel, ref AudioClip clip, ref float __result)
         {
@@ -35,6 +36,7 @@ namespace RadioPlus
                 }
                 lengthCache.Add(queue, total);
             }
+            
 
             if (total <= 0f)
             {
@@ -43,7 +45,7 @@ namespace RadioPlus
                 return false;
             }
 
-            float t = Time.unscaledTime % total;
+                        float t = Time.unscaledTime % total;
 
             for (int i = 0; i < queue.Length; i++)
             {
